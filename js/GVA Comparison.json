@@ -1,0 +1,35 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Tourism's Economic Contribution Across Australian Regions",
+    "subtitle": "Total tourism-related gross value added, 2023–24 ($ million)"
+  },
+  "data": {
+    "url": ""
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "gva",
+      "type": "quantitative",
+      "title": "Gross Value Added ($ million)"
+    },
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Tourism Region",
+      "sort": "-x"
+    },
+    "color": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State / Territory"
+    },
+    "tooltip": [
+      {"field": "region", "type": "nominal", "title": "Region"},
+      {"field": "state", "type": "nominal", "title": "State / Territory"},
+      {"field": "gva", "type": "quantitative", "title": "Total GVA ($m)", "format": ",.0f"}
+    ]
+  }
+}
