@@ -1,0 +1,185 @@
+Region,State,STATE_NAME,Longtitude,Latitude,Consumption,GVA,GRP,Filled_Jobs
+South Coast,NSW,New South Wales,150.0587458,-35.90756752,5340,1492,1769,17.5
+Sydney,NSW,New South Wales,150.8512904,-33.67869081,29136,11629,13701,85.2
+Snowy Mountains,NSW,New South Wales,148.9414958,-36.43952408,1210,316,380,5.1
+Capital Country,NSW,New South Wales,149.288521,-34.74473464,1489,398,470,4.9
+The Murray,NSW,New South Wales,143.9335562,-34.46741232,1040,295,357,4.2
+Riverina,NSW,New South Wales,146.3682332,-34.53123619,1232,327,386,4.6
+Central NSW,NSW,New South Wales,148.3453693,-32.55490133,2972,715,843,10.3
+Hunter,NSW,New South Wales,151.0895486,-32.32160078,5364,1533,1811,18.3
+New England North West,NSW,New South Wales,150.7019629,-30.06343259,1495,405,477,5.5
+Outback NSW,NSW,New South Wales,144.5114802,-30.89819543,535,125,152,2.1
+Central Coast,NSW,New South Wales,151.2855002,-33.30790009,1900,604,711,7.8
+Blue Mountains,NSW,New South Wales,150.1332302,-33.60401055,1377,353,414,4.3
+North Coast NSW,NSW,New South Wales,152.7070379,-30.24208754,7076,2001,2393,25.2
+Melbourne,VIC,Victoria,144.9373483,-37.78511769,24716,9589,11346,87.5
+Wimmera,VIC,Victoria,142.0830534,-36.18009855,137,24,28,0.7
+Mallee,VIC,Victoria,142.2078115,-35.02022727,766,212,254,3.8
+Great Ocean Road,VIC,Victoria,142.6122949,-38.13575539,2531,665,792,11.3
+Western Grampians,VIC,Victoria,142.0530354,-37.26210134,258,70,83,1.4
+Bendigo Loddon,VIC,Victoria,144.0439097,-36.47058932,1110,299,351,4.8
+Peninsula,VIC,Victoria,145.0562807,-38.31030614,2344,672,791,10.5
+Central Murray,VIC,Victoria,145.1096075,-36.21213635,759,181,215,4.0
+Goulburn,VIC,Victoria,145.2716449,-36.7876299,663,182,212,3.2
+High Country,VIC,Victoria,146.6465867,-36.7425805,2720,719,860,12.6
+Lakes,VIC,Victoria,148.2547565,-37.37810326,925,227,271,5.0
+Gippsland,VIC,Victoria,146.5492916,-38.08883735,1167,359,424,5.3
+Yarra Valley and the Dandenong Ranges,VIC,Victoria,145.6118093,-37.81823197,1225,403,469,6.9
+Geelong and the Bellarine,VIC,Victoria,144.0267838,-37.94315593,2148,618,724,9.4
+Macedon,VIC,Victoria,144.6153024,-37.33440124,333,89,103,1.5
+Spa Country,VIC,Victoria,143.9702616,-37.12818845,550,113,134,3.3
+Ballarat,VIC,Victoria,143.6986179,-37.43873539,1126,293,342,4.5
+Central Highlands,VIC,Victoria,142.8864573,-37.11191951,496,103,123,2.5
+Murray East,VIC,Victoria,146.8826158,-36.15049053,255,78,93,0.8
+Phillip Island,VIC,Victoria,145.5986421,-38.51653851,1183,307,365,4.9
+Limestone Coast,SA,South Australia,140.4590758,-36.87970454,587,144,168,2.1
+"Murray River, Lakes and Coorong",SA,South Australia,139.9151267,-35.3177098,336,83,98,1.4
+Fleurieu Peninsula,SA,South Australia,138.6836029,-35.39059513,883,210,249,3.6
+Adelaide,SA,South Australia,138.6260553,-34.83342599,6545,2553,3001,22.8
+Barossa,SA,South Australia,138.9123572,-34.49600227,379,75,87,1.0
+Riverland,SA,South Australia,140.1987786,-34.37328245,317,71,84,1.2
+Flinders Ranges and Outback,SA,South Australia,135.5152023,-29.27262404,779,183,216,2.5
+Clare Valley,SA,South Australia,139.0043424,-33.71942218,230,39,46,0.7
+Eyre Peninsula,SA,South Australia,134.408406,-32.75940106,631,168,199,2.4
+Yorke Peninsula,SA,South Australia,137.9109852,-34.31916288,468,86,103,1.6
+Kangaroo Island,SA,South Australia,137.2397077,-35.8277993,277,83,98,1.0
+ Adelaide Hills ,SA,South Australia,138.8529676,-34.97558778,302,77,90,1.4
+Gold Coast,QLD,Queensland,153.3157424,-27.98490288,8836,3079,3680,29.9
+Brisbane,QLD,Queensland,152.8528302,-27.71870083,14758,5633,6738,45.9
+Sunshine Coast,QLD,Queensland,152.6060292,-26.27998259,6107,1375,1638,17.8
+Fraser Coast,QLD,Queensland,152.5231518,-25.60588094,1105,649,775,7.0
+Southern Queensland Country,QLD,Queensland,150.9108102,-27.37383139,2945,740,880,10.0
+Bundaberg,QLD,Queensland,151.4085885,-25.26002701,839,229,272,2.9
+Gladstone,QLD,Queensland,151.3155206,-24.21066129,411,154,183,1.7
+Mackay,QLD,Queensland,147.9919517,-22.1151952,1116,283,337,3.1
+Whitsundays,QLD,Queensland,147.7125561,-20.70608495,1763,568,680,5.9
+Townsville,QLD,Queensland,145.9310731,-20.0422823,1485,530,632,6.0
+Tropical North Queensland,QLD,Queensland,142.490213,-16.58144445,5551,1890,2263,19.3
+Outback Queensland,QLD,Queensland,143.390278,-24.39468885,1011,228,271,2.7
+Capricorn,QLD,Queensland,150.2018423,-23.03911824,1081,306,364,3.9
+Destination Perth,WA,Western Australia,116.5663809,-32.18294968,9616,3688,4441,40.4
+Australia's Golden Outback,WA,Western Australia,122.5368856,-28.36833118,1848,383,440,5.7
+Australia's South West,WA,Western Australia,117.229266,-34.08747063,5157,1328,1525,15.7
+Australia's North West,WA,Western Australia,123.7243805,-20.04886645,2469,716,842,5.9
+Australia's Coral Coast,WA,Western Australia,115.3359463,-26.21776378,1620,488,562,5.0
+Darwin,NT,Northern Territory,131.1080511,-12.53085506,1735,634,763,3.94
+Barkly,NT,Northern Territory,135.0621341,-19.28088507,66,20,25,0.10
+Alice Springs,NT,Northern Territory,133.8547769,-23.73505938,439,163,196,1.08
+Litchfield Kakadu Arnhem,NT,Northern Territory,133.6321077,-12.69919764,427,108,135,1.34
+Katherine Daly,NT,Northern Territory,132.6924278,-15.6955976,384,106,131,0.97
+MacDonnell,NT,Northern Territory,132.5913694,-22.05674519,91,18,23,0.15
+Lasseter,NT,Northern Territory,133.4955086,-25.09960313,516,167,192,0.39
+Canberra,ACT,Australian Capital Territory,149.0025009,-35.48869681,4028,1341,1572,11.7
+East Coast,TAS,Tasmania,148.0123096,-41.77131887,421,127,156,2.2
+North West,TAS,Tasmania,145.498426,-41.25410068,851,313,384,4.1
+West Coast,TAS,Tasmania,145.6373494,-42.29814996,153,46,56,0.3
+Hobart and the South,TAS,Tasmania,146.7449111,-42.6643317,3127,1045,1232,11.1
+Launceston and the North,TAS,Tasmania,147.2398983,-41.51402911,1208,363,440,5.1
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,

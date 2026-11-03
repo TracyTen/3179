@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Direct Tourism Economic Activity across Australian States (2023–24)",
+  "title": "Direct Tourism Economic Activity by Region (2023–24)",
   "width": 700,
   "height": 450,
   "projection": {
@@ -9,24 +9,20 @@
     "scale": 700
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/tonywr71/GeoJson-Data/master/australian-states.json",
+    "url": "https://raw.githubusercontent.com/TracyTen/3179/refs/heads/main/js/Tourism%20Regions%202026.json",
     "format": {
-      "type": "json",
-      "property": "features"
+      "type": "topojson",
+      "feature": "Tourism Regions 2026"
     }
   },
   "transform": [
     {
-      "calculate": "datum.properties.STATE_NAME == 'New South Wales' ? 'NSW' : datum.properties.STATE_NAME == 'Victoria' ? 'VIC' : datum.properties.STATE_NAME == 'Queensland' ? 'QLD' : datum.properties.STATE_NAME == 'South Australia' ? 'SA' : datum.properties.STATE_NAME == 'Western Australia' ? 'WA' : datum.properties.STATE_NAME == 'Tasmania' ? 'TAS' : datum.properties.STATE_NAME == 'Northern Territory' ? 'NT' : 'ACT'",
-      "as": "state_abbr"
-    },
-    {
-      "lookup": "state_abbr",
+      "lookup": "properties.TR_NAME",
       "from": {
         "data": {
           "url": "https://raw.githubusercontent.com/TracyTen/3179/refs/heads/main/data/tourism_regions.csv"
         },
-        "key": "State",
+        "key": "Region",
         "fields": ["Consumption", "GVA", "GRP", "Filled_Jobs"]
       }
     }
@@ -34,7 +30,7 @@
   "mark": {
     "type": "geoshape",
     "stroke": "#ffffff",
-    "strokeWidth": 1
+    "strokeWidth": 0.5
   },
   "encoding": {
     "color": {
@@ -46,16 +42,11 @@
       }
     },
     "tooltip": [
-      {"field": "properties.STATE_NAME", "type": "nominal", "title": "State"},
+      {"field": "properties.TR_NAME", "type": "nominal", "title": "Tourism Region"},
       {"field": "Consumption", "type": "quantitative", "title": "Direct Consumption ($M)", "format": "$,.0f"},
       {"field": "GVA", "type": "quantitative", "title": "Direct GVA ($M)", "format": "$,.0f"},
       {"field": "GRP", "type": "quantitative", "title": "Direct GRP ($M)", "format": "$,.0f"},
       {"field": "Filled_Jobs", "type": "quantitative", "title": "Filled Jobs ('000)", "format": ".1f"}
     ]
-  },
-  "config": {
-    "title": {
-      "fontSize": 16
-    }
   }
 }
