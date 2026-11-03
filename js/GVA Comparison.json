@@ -2,33 +2,42 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Tourism's Economic Contribution Across Australian Regions",
-    "subtitle": "Total tourism-related gross value added, 2023–24 ($ million)"
+    "subtitle": "Total tourism-related gross value added, 2023–24 ($ million)",
+    "anchor": "start"
   },
+  "width": "container",
+  "height": {"step": 22},
   "data": {
-    "url": "https://raw.githubusercontent.com/TracyTen/3179/refs/heads/main/data/GVA%20Comparison.csv"
+    "url": "https://raw.githubusercontent.com/TracyTen/3179/refs/heads/main/data/GVA%20Comparison.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "Total GVA ($m)": "number"
+      }
+    }
   },
   "mark": "bar",
   "encoding": {
     "x": {
-      "field": "gva",
+      "field": "Total GVA ($m)",
       "type": "quantitative",
       "title": "Gross Value Added ($ million)"
     },
     "y": {
-      "field": "region",
+      "field": "Region",
       "type": "nominal",
       "title": "Tourism Region",
-      "sort": "-x"
+      "sort": {"field": "Total GVA ($m)", "order": "descending"}
     },
     "color": {
-      "field": "state",
+      "field": "State/Territory",
       "type": "nominal",
       "title": "State / Territory"
     },
     "tooltip": [
-      {"field": "region", "type": "nominal", "title": "Region"},
-      {"field": "state", "type": "nominal", "title": "State / Territory"},
-      {"field": "gva", "type": "quantitative", "title": "Total GVA ($m)", "format": ",.0f"}
+      {"field": "Region", "type": "nominal", "title": "Region"},
+      {"field": "State/Territory", "type": "nominal", "title": "State / Territory"},
+      {"field": "Total GVA ($m)", "type": "quantitative", "title": "Total GVA ($m)", "format": ",.0f"}
     ]
   }
 }
