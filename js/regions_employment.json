@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Full-Time vs. Part-Time Employment Gap across 15 Key Tourism Hubs (2023–24)",
+  "width": 650,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/TracyTen/3179/refs/heads/main/data/regions_employment.csv"
+  },
+  "layer": [
+    {
+      "mark": {"type": "rule", "color": "#aaaaaa", "strokeWidth": 2},
+      "encoding": {
+        "y": {
+          "field": "Region",
+          "type": "nominal",
+          "title": "Tourism Hub Region",
+          "sort": "-x"
+        },
+        "x": {"field": "Full_Time_000", "type": "quantitative"},
+        "x2": {"field": "Part_Time_000"}
+      }
+    },
+    {
+      "mark": {"type": "point", "size": 90, "filled": true},
+      "encoding": {
+        "y": {"field": "Region", "type": "nominal", "sort": "-x"},
+        "x": {
+          "field": "Full_Time_000",
+          "type": "quantitative",
+          "title": "Filled Jobs ('000)"
+        },
+        "color": {
+          "datum": "Full-Time",
+          "type": "nominal",
+          "title": "Employment Mode",
+          "scale": {
+            "domain": ["Full-Time", "Part-Time"],
+            "range": ["#1f77b4", "#ff7f0e"]
+          }
+        },
+        "tooltip": [
+          {"field": "Region", "type": "nominal", "title": "Regional Hub"},
+          {"field": "Full_Time_000", "type": "quantitative", "title": "Full-Time Jobs ('000)", "format": ",.1f"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "point", "size": 90, "filled": true},
+      "encoding": {
+        "y": {"field": "Region", "type": "nominal", "sort": "-x"},
+        "x": {"field": "Part_Time_000", "type": "quantitative"},
+        "color": {
+          "datum": "Part-Time",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {"field": "Region", "type": "nominal", "title": "Regional Hub"},
+          {"field": "Part_Time_000", "type": "quantitative", "title": "Part-Time Jobs ('000)", "format": ",.1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "legend": {
+      "orient": "right",
+      "offset": 10
+    }
+  }
+}
