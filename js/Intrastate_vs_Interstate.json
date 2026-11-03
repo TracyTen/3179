@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Domestic Travel Share: Intrastate vs. Interstate Regional Expenditure ($M)",
+  "width": 550,
+  "height": 280,
+  "data": {
+    "url": "https://raw.githubusercontent.com/TracyTen/3179/refs/heads/main/data/interstate_vs_intrastate.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "Trips_000": "number",
+        "Visitor_Nights_000": "number",
+        "Expenditure_M": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.Travel_Type != 'Total'"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "Quarter",
+          "type": "ordinal",
+          "title": "Quarter",
+          "sort": ["June quarter 2025", "September quarter 2025", "December quarter 2025", "March quarter 2026", "June quarter 2026"],
+          "axis": {"labelAngle": 0}
+        },
+        "y": {
+          "field": "Expenditure_M",
+          "type": "quantitative",
+          "title": "Total Regional Expenditure ($M AUD)",
+          "stack": "zero"
+        },
+        "color": {
+          "field": "Travel_Type",
+          "type": "nominal",
+          "title": "Travel Dependency",
+          "scale": {
+            "domain": ["Intrastate", "Interstate"],"range": ["#2b5c8f", "#d95f02"]
+          },
+        "sort": ["Intrastate", "Interstate"]
+        },
+        "tooltip": [
+          {"field": "Travel_Type", "type": "nominal", "title": "Type"},
+          {"field": "Quarter", "type": "ordinal", "title": "Quarter"},
+          {"field": "Expenditure_M", "type": "quantitative", "title": "Expenditure ($M)", "format": "$,.0f"},
+          {"field": "Trips_000", "type": "quantitative", "title": "Trips ('000)", "format": ",.0f"},
+          {"field": "Visitor_Nights_000", "type": "quantitative", "title": "Visitor Nights ('000)", "format": ",.0f"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "color": "white",
+        "fontWeight": "bold",
+        "fontSize": 11
+      },
+      "encoding": {
+        "x": {
+          "field": "Quarter",
+          "type": "ordinal",
+          "sort": ["June quarter 2025", "September quarter 2025", "December quarter 2025", "March quarter 2026", "June quarter 2026"]
+        },
+        "y": {
+          "field": "Expenditure_M",
+          "type": "quantitative",
+          "stack": "zero",
+          "bandPosition": 0.5
+        },
+        "text": {
+          "field": "Expenditure_M",
+          "type": "quantitative",
+          "format": "$,.0f"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {"grid": false}
+  }
+}
