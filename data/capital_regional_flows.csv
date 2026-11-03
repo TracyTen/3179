@@ -1,16 +1,16 @@
-Destination,Dest_Lat,Dest_Long,State,Visitor_Nights_000,Expenditure_M
-Sydney,-33.8688,151.2093,New South Wales,27718,11757
-Hunter,-32.5549,151.0895,New South Wales,14200,4800
-Blue Mountains,-33.604,150.1332,New South Wales,8500,2100
-Melbourne,-37.7851,144.9373,Victoria,20134,9637
-Great Ocean Road,-38.1358,142.6123,Victoria,11200,3400
-Central Highlands,-37.1119,142.8865,Victoria,5400,1200
-Brisbane / Gold Coast,-27.9849,153.3157,Queensland,21613,9035
-Whitsundays,-20.7061,147.7126,Queensland,4200,1850
-Outback Queensland,-24.3947,143.3903,Queensland,2800,950
-Adelaide,-34.8334,138.6261,South Australia,5910,2740
-Barossa,-34.496,138.9124,South Australia,2600,1100
-Perth & South West,-34.0875,117.2293,Western Australia,8544,4229
-Hobart and the South,-42.6643,146.7449,Tasmania,2449,916
-Darwin & Alice Springs,-23.7351,133.8548,Northern Territory,1160,559
-Canberra,-35.4887,149.0025,Australian Capital Territory,1461,625
+Destination,Longitude,Latitude ,State,Direct_Tourism_GVA_M,Filled_Jobs_000
+Sydney,150.8512904,-33.67869081,New South Wales,11628.5,85.2
+Hunter,151.0895486,-32.32160078,New South Wales,1533.3,18.3
+Blue Mountains,150.1332302,-33.60401055,New South Wales,353.3,4.3
+Melbourne,144.9373483,-37.78511769,Victoria,9589.1,87.5
+Great Ocean Road,142.6122949,-38.13575539,Victoria,664.8,11.3
+Central Highlands,142.8864573,-37.11191951,Victoria,103,2.5
+Gold Coast,153.3157424,-27.98490288,Queensland,3078.8,29.9
+Whitsunudays,147.7125561,-20.70608495,Queensland,567.7,5.8
+Outback Queensland,143.390278,-24.39468885,Queensland,227.7,2.7
+Adelaide,138.6260553,-34.83342599,South Australia,2552.7,22.9
+Barossa,138.9123572,-34.49600227,South Australia,74.7,1
+Australia's South West,147.7125561,-20.70608495,Western Australia,1328.4,15.8
+Hobart and the South,146.7449111,-42.6643317,Tasmania,1044.6,11.2
+Alice Springs,133.8547769,-23.73505938,Northern Territory,162.7,1.1
+Canberra,149.0025009,-35.48869681,Australian Capital Territory,290.4,3
