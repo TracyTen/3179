@@ -3,13 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Australian Tourism & Demographic Analytics</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Australian Tourism & Demographic Analytics Dashboard</title>
 
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
@@ -17,71 +11,133 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body>
 
-  <header class="dashboard-header bg-white border-b border-gray-200 py-10 px-6 sm:px-12">
-    <div class="max-w-6xl mx-auto space-y-2">
-      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">Australian Domestic Tourism & Demographic Analytics (2025–2026)</h1>
-      <p class="text-base text-gray-600 max-w-3xl leading-relaxed">A multi-perspective exploratory dashboard combining ABS population data and TRA tourism metrics.</p>
-    </div>
+  <header class="dashboard-header">
+    <h1>Australian Domestic Tourism & Demographic Analytics</h1>
+    <p>This project explores different aspects of Australia's tourism industry by combining TRA Tourism Metrics with ABS Remoteness Data. It uses a range of visualisations to analyse tourism trends, spending patterns and visitor behaviour across different regions, while also looking at the differences between major cities and regional areas. The aim is to better understand how tourism contributes to regional economies and how factors such as visitor numbers, travel purposes and employment affect tourism growth across Australia.</p>
   </header>
 
-  <main class="dashboard-container max-w-6xl mx-auto px-6 sm:px-12 py-12">
+  <main class="dashboard-container">
+
+    <section class="story-section macro-summary">
+      <div class="section-header">
+        <h2>Executive Summary & Strategic Overview</h2>
+      </div>
+      <p>This analytics suite evaluates the post-recovery dynamics of domestic tourism across regional and metropolitan Australia. By cross-referencing Tourism Research Australia (TRA) spend profiles with Australian Bureau of Statistics (ABS) spatial demographics, the dashboard unpacks a critical economic paradox: while capital city hubs dominate total direct consumption volume, regional and remote destinations achieve significantly higher growth velocity and per-visitor yield. Sustainable regional growth relies on balancing high-yield overnight accommodation with localized workforce capacity.</p>
+    </section>
 
     <section class="story-section">
       <div class="section-header">
-        <h2>Part 1: Regional Economic Footprint</h2>
-        <p>Examining spatial clusters of tourism revenue and regional growth trends over time.</p>
-      </div>
-
-      <div class="map-card">
-        <h3>Spatial Distribution of Tourism Expenditure & Employment</h3>
-        <div id="vis-map-1" class="chart-box"></div>
+        <h2>Part 1: Regional Economic Footprint & Growth</h2>
+        <p>This section looks at how tourism contributes to the economy across different regions in Australia. It uses maps and visualisations to show where most tourism spending takes place, how tourism-related GVA has changed over the years, and how expenditure growth differs between states and territories. It also helps identify which regions are generating the most tourism income and which areas are experiencing the fastest growth over time.</p>
       </div>
 
       <div class="charts-grid-2col">
         <div class="chart-card">
-          <h3>Regional Economic Contribution (Indexed)</h3>
-          <div id="vis-heatmap" class="chart-box"></div>
+          <h3>Economic Contribution Heatmap Over Time</h3>
+          <div id="vis-gva-trend" class="chart-box"></div>
+          <p class="chart-analysis">Looking at the tourism trends over the years, there was a significant drop in tourism activity during 2020–21, especially in major cities like Sydney and Melbourne due to the pandemic. However, some regional destinations, such as the Whitsundays and Central Highlands, recovered quite quickly. By 2023–24, several regional areas had even performed better than they did before the pandemic, with their GVA index going above 150. This suggests that regional tourism areas were able to recover well from major disruptions and continue growing despite the challenges.</p>
         </div>
         <div class="chart-card">
-          <h3>State Volume vs. Expenditure Growth Profile</h3>
-          <div id="vis-dumbbell" class="chart-box"></div>
+          <h3>State Volume vs. Expenditure YoY Growth Profile</h3>
+          <div id="vis-state-growth" class="chart-box"></div>
+          <p class="chart-analysis">When comparing the growth in visitor numbers with tourism spending, there is a clear difference in places like the Northern Territory and Tasmania. For example, the NT recorded around 20% growth in spending despite only having about 3% growth in visitor numbers, while Tasmania also saw spending increase by around 15%. This shows that even though fewer people may be travelling to these more remote areas, they are spending more money per visit. In other words, tourism growth in these regions is becoming less dependent on attracting more visitors and more focused on getting higher spending from each visitor.</p>
         </div>
       </div>
 
       <div class="insight-box">
-        <p><strong>Key Insight:</strong> Capital city hubs and major coastal regions drive over 70% of total direct consumption, but regional hubs like Outback QLD demonstrate significant yield per visitor growth.</p>
+        <p>Overall, although major capital cities still account for most of Australia's tourism spending and visitor numbers, regional areas are showing strong growth in terms of tourism expenditure. Places like the Northern Territory and Tasmania are growing quickly despite having fewer visitors compared to major cities. The long-term GVA trends also show that regional tourism areas have managed to recover and continue growing over time. This suggests that regional tourism is becoming an increasingly important part of Australia's tourism economy, even without having the highest number of visitors.</p>
       </div>
     </section>
 
     <section class="story-section">
       <div class="section-header">
-        <h2>Part 2: Demographics & Travel Dynamics</h2>
-        <p>Analyzing population remoteness alongside travel motivations and stay durations.</p>
+        <h2>Part 2: Demographic Distribution & Visitor Dynamics</h2>
+        <p>This section looks at how population is distributed across different regions in Australia and how it relates to tourism activities. It explores the differences between densely populated cities and less populated regional areas, while also comparing how much visitors spend depending on whether they stay overnight or only visit for the day. It also looks at the main reasons people travel to regional areas and how these travel purposes change throughout different quarters of the year. This helps us better understand visitor behaviour and how population distribution, length of stay and travel motivations influence regional tourism.</p>
       </div>
 
       <div class="map-card">
-        <h3>Demographic Weight & Population Remoteness Distribution</h3>
-        <div id="vis-map-2" class="chart-box"></div>
+        <h3>Regional Tourism Expenditure & Employment Clusters</h3>
+        <div id="vis-map2" class="chart-box"></div>
+        <p class="chart-analysis">By comparing the number of tourism-related jobs with direct tourism spending across different regions, we can see how tourism contributes to local employment. Coastal regions generally show a strong connection between tourism spending and the number of jobs created, meaning that higher tourism spending also helps support more local employment. However, some remote inland areas have fewer tourism-related jobs despite having relatively high spending per visitor. This could mean that these regions are generating more spending with a smaller workforce, or that they may be facing challenges in finding enough workers to support their tourism activities.</p>
       </div>
 
       <div class="charts-grid-3col">
         <div class="chart-card">
-          <h3>Intrastate vs. Interstate Share</h3>
-          <div id="vis-stacked-bar" class="chart-box"></div>
+          <h3>Intrastate vs. Interstate Expenditure Share</h3>
+          <div id="vis-intrastate" class="chart-box"></div>
+          <p class="chart-analysis">Visitors who travel within their own state are the main source of tourism spending in regional Australia, consistently spending almost twice as much as visitors coming from other states. Quarterly spending from intrastate travellers is around $25–27 billion AUD, compared to $13–15 billion AUD from interstate travellers. This shows how important local travellers are to regional tourism businesses, as they provide a more consistent source of income and help support these businesses even when there are changes in the economy or travel restrictions.</p>
         </div>
         <div class="chart-card">
-          <h3>Travel Purpose Disparities</h3>
-          <div id="vis-parallel-coord" class="chart-box"></div>
+          <h3>Travel Purposes</h3>
+          <div id="vis-purpose" class="chart-box"></div>
+          <p class="chart-analysis">A substantial gap exists across travel motivations: while Visiting Friends and Relatives (VFR) makes up 36.9% of visitor nights, Holiday travelers generate 56.9% of total regional expenditure. VFR travelers utilize private housing, whereas Holiday travelers utilize paid accommodations, retail, and commercial dining.</p>
         </div>
         <div class="chart-card">
-          <h3>Quarterly Travel Motivators</h3>
-          <div id="vis-area-chart" class="chart-box"></div>
+          <h3>Quarterly Dynamics of Travel Motivators</h3>
+          <div id="vis-tra-purpose" class="chart-box"></div>
+          <p class="chart-analysis">When looking at tourism spending across different quarters, holiday travel shows a lot of seasonal changes, with spending reaching its highest point in Q1 (summer) at around $25 billion AUD. This suggests that more people tend to travel during the summer holidays. On the other hand, business travel spending stays relatively stable at around $4 billion AUD per quarter, with very little change throughout the year. This means that business travel provides a more consistent source of income for the tourism industry, even during periods when holiday travel is slower.</p>
         </div>
       </div>
 
       <div class="insight-box">
-        <p><strong>Key Insight:</strong> Intrastate travel dominates total regional spend, heavily influenced by holiday intent and high local population concentrations in inner regional tiers.</p>
+        <p>Overall, intrastate travellers play a major role in supporting regional tourism in Australia, consistently contributing almost twice as much spending as interstate travellers. Holiday travel is also one of the biggest contributors to regional tourism expenditure, making up more than 56.9% of total spending. However, holiday spending tends to increase during the summer months, showing that regional tourism is still affected by seasonal travel patterns. This highlights the importance of local travellers and holiday visitors in supporting regional businesses and maintaining tourism activities throughout the year.</p>
+      </div>
+    </section>
 
-  
+    <section class="story-section">
+      <div class="section-header">
+        <h2>Part 3: Yield, Expenditure & Employment Disparities</h2>
+        <p>This section looks at how tourism spending differs across various types of visitors and regions in Australia. It compares how much visitors spend per trip, how their length of stay affects total expenditure, and which types of travel contribute the most to the tourism industry. It also explores the differences in employment between major cities and regional areas, particularly the reliance on full-time and part-time workers. Through these comparisons, we can better understand how tourism spending supports local businesses and employment, and how different regions benefit from tourism in different ways.</p>
+      </div>
+
+      <div class="map-card">
+        <h3>Tourism Regions Map Overview</h3>
+        <div id="vis-map3" class="chart-box"></div>
+        <p class="chart-analysis">By looking at the official TRA regional boundaries, we can see how different areas in Australia have their own tourism patterns and economic activities. Coastal regions tend to have tourism destinations located closer together, making it easier for visitors to travel between different attractions. However, remote areas are more spread out, with destinations being further apart and operating more independently. This shows how the location and layout of each region can affect its tourism activities and development.</p>
+      </div>
+
+      <div class="charts-grid-3col">
+        <div class="chart-card">
+          <h3>Day Trip vs. Overnight Spend Yield</h3>
+          <div id="vis-day-vs-overnight" class="chart-box"></div>
+          <p class="chart-analysis">When comparing spending between day-trippers and overnight visitors, there is a clear difference in how much they contribute to regional tourism. Day-trippers generally spend around $150–$250 AUD per trip, while overnight visitors can generate up to $420 AUD per night. This is mainly because overnight visitors spend more on accommodation, food and other activities. This suggests that encouraging more visitors to stay overnight instead of only visiting for the day could help regional areas generate more tourism income.</p>
+        </div>
+        <div class="chart-card">
+          <h3>Domestic Expenditure Breakdown</h3>
+          <div id="vis-expenditure" class="chart-box"></div>
+          <p class="chart-analysis">More than 50% of total domestic tourism spending goes towards accommodation and food services, including restaurants, dining and takeaway food. Transport and long-distance airfares also make up a large portion of tourism expenditure, while retail shopping and tours contribute a smaller share. This shows that accommodation, food and transport are some of the main sectors benefiting from tourism spending.</p>
+        </div>
+        <div class="chart-card">
+          <h3>Full-Time vs. Part-Time Regional Employment</h3>
+          <div id="vis-employment" class="chart-box"></div>
+          <p class="chart-analysis">Major cities like Sydney and Melbourne have a much larger number of full-time workers in the tourism industry. However, regional destinations such as the Whitsundays, Great Ocean Road and Barossa rely more heavily on part-time and seasonal workers. This is likely because tourism demand in these areas changes throughout the year, especially during peak holiday seasons. As a result, regional tourism businesses may face difficulties finding enough workers when visitor numbers increase, making them more vulnerable to labour shortages.</p>
+        </div>
+      </div>
+
+      <div class="insight-box">
+        <p>Overall, overnight visitors contribute significantly more to regional tourism spending compared to day-trippers, mainly through accommodation, food and other tourism-related activities. More than half of domestic tourism expenditure also goes towards accommodation and food services, showing how important these sectors are to the tourism industry. However, regional tourism areas still face challenges with employment, as many depend on part-time and seasonal workers compared to major cities, which have more stable full-time workforces. This suggests that while regional tourism can generate substantial income, maintaining a reliable workforce remains an important challenge, especially during peak travel seasons.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const opts = { actions: { export: true, source: false, compiled: false, editor: false } };
+
+    vegaEmbed('#vis-gva-trend', 'js/GVA_Trend.json', opts);
+    vegaEmbed('#vis-state-growth', 'js/state_growth.json', opts);
+    
+    vegaEmbed('#vis-map2', 'js/region_coordinates_bubble.json', opts);
+    vegaEmbed('#vis-intrastate', 'js/Intrastate_vs_Interstate.json', opts);
+    vegaEmbed('#vis-purpose', 'js/TRA_purpose.json', opts);
+    vegaEmbed('#vis-tra-purpose', 'js/travel_purposes.json', opts);
+    
+    vegaEmbed('#vis-map3', 'js/tourism_regions.json', opts);
+    vegaEmbed('#vis-day-vs-overnight', 'js/day_vs_overnight_trips.json', opts);
+    vegaEmbed('#vis-expenditure', 'js/domestic_tourism_expenditure.json', opts);
+    vegaEmbed('#vis-employment', 'js/regions_employment.json', opts);
+  </script>
+</body>
+</html>
