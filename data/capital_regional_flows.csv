@@ -1,13 +1,16 @@
-Origin,Origin_Lat,Origin_Long,Destination,Dest_Lat,Dest_Long,Flow_Type
-Sydney,-33.8688,151.2093,Hunter,-32.5549,151.0895,Intrastate
-Sydney,-33.8688,151.2093,Blue Mountains,-33.604,150.1332,Intrastate 
-Melbourne,-37.7851,144.9373,Great Ocean Road,-38.1358,142.6123,Interstate
-Melbourne,-37.7851,144.9373,Central Highlands,-37.1119,142.8865,Interstate
-Adelaide,-34.8334,138.6261,Barossa,-34.496,138.9124,Intrastate
-Brisbane,-27.7187,152.8528,Gold Coast,-27.9849,153.3157,Intrastate
-Brisbane,-27.7187,152.8528,Whitsundays,-20.7061,147.7126,Interstate
-Brisbane,-27.7187,152.8528,Outback Queensland,-24.3947,143.3903,Intrastate
-Perth,-32.1829,116.5664,Australia's South West,-34.0875,117.2293,Intrastate
-Hobart,-42.6643,146.7449,Hobart and the South,-42.6643,146.7449,Interstate
-Canberra,-35.4887,149.0025,Canberra,-35.4887,149.0025,Intrastate
-Darwin,-12.5309,131.1081,Alice Springs,-23.7351,133.8548,Intrastate
+Destination,Dest_Lat,Dest_Long,State,Visitor_Nights_000,Expenditure_M
+Sydney,-33.8688,151.2093,New South Wales,27718,11757
+Hunter,-32.5549,151.0895,New South Wales,14200,4800
+Blue Mountains,-33.604,150.1332,New South Wales,8500,2100
+Melbourne,-37.7851,144.9373,Victoria,20134,9637
+Great Ocean Road,-38.1358,142.6123,Victoria,11200,3400
+Central Highlands,-37.1119,142.8865,Victoria,5400,1200
+Brisbane / Gold Coast,-27.9849,153.3157,Queensland,21613,9035
+Whitsundays,-20.7061,147.7126,Queensland,4200,1850
+Outback Queensland,-24.3947,143.3903,Queensland,2800,950
+Adelaide,-34.8334,138.6261,South Australia,5910,2740
+Barossa,-34.496,138.9124,South Australia,2600,1100
+Perth & South West,-34.0875,117.2293,Western Australia,8544,4229
+Hobart and the South,-42.6643,146.7449,Tasmania,2449,916
+Darwin & Alice Springs,-23.7351,133.8548,Northern Territory,1160,559
+Canberra,-35.4887,149.0025,Australian Capital Territory,1461,625
