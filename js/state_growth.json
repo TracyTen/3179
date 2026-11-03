@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "State Volume vs. Expenditure YoY Growth Profile (%)",
+  "width": 650,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/TracyTen/3179/refs/heads/main/data/state_growth.csv"
+  },
+  "layer": [
+    {
+      "mark": {"type": "rule", "color": "#888888", "strokeWidth": 1.5, "strokeDash": [4, 4]},
+      "encoding": {
+        "x": {"datum": 0, "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [
+        {"calculate": "'Trips Growth (%)'", "as": "Metric"}
+      ],
+      "mark": {"type": "rule", "strokeWidth": 2.5, "yOffset": -4},
+      "encoding": {
+        "y": {
+          "field": "State",
+          "type": "nominal",
+          "title": "State / Territory",
+          "sort": "-x"
+        },
+        "x": {
+          "field": "Trips_Change_Pct",
+          "type": "quantitative",
+          "title": "YoY Growth Rate (%)"
+        },
+        "color": {
+          "field": "Metric",
+          "type": "nominal",
+          "title": "Metric Type",
+          "scale": {
+            "domain": ["Trips Growth (%)", "Expenditure Growth (%)"],
+            "range": ["#1f77b4", "#ff7f0e"]
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {"calculate": "'Trips Growth (%)'", "as": "Metric"}
+      ],
+      "mark": {"type": "point", "size": 90, "filled": true, "yOffset": -4},
+      "encoding": {
+        "y": {"field": "State", "type": "nominal", "sort": "-x"},
+        "x": {"field": "Trips_Change_Pct", "type": "quantitative"},
+        "color": {"field": "Metric", "type": "nominal"},
+        "tooltip": [
+          {"field": "State", "type": "nominal"},
+          {"field": "Trips_Change_Pct", "type": "quantitative", "title": "Trips Growth (%)", "format": "+,.1f"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {"calculate": "'Expenditure Growth (%)'", "as": "Metric"}
+      ],
+      "mark": {"type": "rule", "strokeWidth": 2.5, "yOffset": 4},
+      "encoding": {
+        "y": {"field": "State", "type": "nominal", "sort": "-x"},
+        "x": {"field": "Expenditure_Change_Pct", "type": "quantitative"},
+        "color": {"field": "Metric", "type": "nominal"}
+      }
+    },
+    {
+      "transform": [
+        {"calculate": "'Expenditure Growth (%)'", "as": "Metric"}
+      ],
+      "mark": {"type": "point", "size": 90, "filled": true, "yOffset": 4},
+      "encoding": {
+        "y": {"field": "State", "type": "nominal", "sort": "-x"},
+        "x": {"field": "Expenditure_Change_Pct", "type": "quantitative"},
+        "color": {"field": "Metric", "type": "nominal"},
+        "tooltip": [
+          {"field": "State", "type": "nominal"},
+          {"field": "Expenditure_Change_Pct", "type": "quantitative", "title": "Expenditure Growth (%)", "format": "+,.1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "legend": {"orient": "right", "offset": 10}
+  }
+}
