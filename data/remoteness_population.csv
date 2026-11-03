@@ -1,35 +1,35 @@
-RA_Code,Remoteness_Area,State,Population_2025,Latitude,Longitude
-10,Major Cities of Australia,NSW,6535769,-33.8688,151.2093
-11,Inner Regional Australia,NSW,1637245,-32.9283,151.7817
-12,Outer Regional Australia,NSW,267232,-31.0927,150.932
-13,Remote Australia,NSW,26493,-31.956,141.4678
-14,Very Remote Australia,NSW,6745,-30.0898,143.1415
-20,Major Cities of Australia,Vic.,6543436,-37.8136,144.9631
-21,Inner Regional Australia,Vic.,1269403,-36.757,144.2794
-22,Outer Regional Australia,Vic.,257833,-36.3707,146.3687
-23,Remote Australia,Vic.,3237,-35.1227,141.6032
-30,Major Cities of Australia,Qld,3719519,-27.4705,153.026
-31,Inner Regional Australia,Qld,1085429,-26.65,153.0667
-32,Outer Regional Australia,Qld,736287,-23.377,150.51
-33,Remote Australia,Qld,73113,-20.7256,139.4927
-34,Very Remote Australia,Qld,54743,-15.4711,141.9774
-40,Major Cities of Australia,SA,1442902,-34.9285,138.6007
-41,Inner Regional Australia,SA,190485,-35.0645,138.8601
-42,Outer Regional Australia,SA,209082,-33.4833,138.6
-43,Remote Australia,SA,45714,-31.1895,136.8193
-44,Very Remote Australia,SA,14482,-28.8475,134.6974
-50,Major Cities of Australia,WA,2417502,-31.9505,115.8605
-51,Inner Regional Australia,WA,249826,-33.3256,115.6396
-52,Outer Regional Australia,WA,199241,-28.7744,114.6089
-53,Remote Australia,WA,98163,-30.7489,121.4658
-54,Very Remote Australia,WA,68352,-17.9614,122.2359
-61,Inner Regional Australia,Tas.,356023,-42.8821,147.3272
-62,Outer Regional Australia,Tas.,208996,-41.4332,147.1441
-63,Remote Australia,Tas.,8671,-42.1648,145.3262
-64,Very Remote Australia,Tas.,2571,-43.5,146
-71,Major Cities of Australia,NT,155685,-12.4634,130.8456
-72,Inner Regional Australia,NT,55885,-14.465,132.263
-73,Outer Regional Australia,NT,49607,-23.698,133.8807
-74,Very Remote Australia,NT,264556,-19.648,134.1911
-80,Major Cities of Australia,ACT,483939,-35.2809,149.13
-81,Inner Regional Australia,ACT,691,-35.4,149
+RA_Code,Remoteness_Area,State,Population_2025,Grid_X,Grid_Y
+10,Major Cities of Australia,NSW,6535769,7.5,3.2
+11,Inner Regional Australia,NSW,1637245,6.8,3.8
+12,Outer Regional Australia,NSW,267232,6.2,4.4
+13,Remote Australia,NSW,26493,5.5,4.8
+14,Very Remote Australia,NSW,6745,5.1,5.2
+20,Major Cities of Australia,Vic.,6543436,6.2,1.8
+21,Inner Regional Australia,Vic.,1269403,5.5,2.2
+22,Outer Regional Australia,Vic.,257833,5,2.6
+23,Remote Australia,Vic.,3237,4.6,2.9
+30,Major Cities of Australia,Qld,3719519,7.2,6.5
+31,Inner Regional Australia,Qld,1085429,6.5,7.1
+32,Outer Regional Australia,Qld,736287,5.8,7.8
+33,Remote Australia,Qld,73113,4.8,8.2
+34,Very Remote Australia,Qld,54743,4.2,8.8
+40,Major Cities of Australia,SA,1442902,4,3.5
+41,Inner Regional Australia,SA,190485,3.6,4
+42,Outer Regional Australia,SA,209082,3.3,4.5
+43,Remote Australia,SA,45714,2.9,5
+44,Very Remote Australia,SA,14482,2.5,5.5
+50,Major Cities of Australia,WA,2417502,1.2,3.8
+51,Inner Regional Australia,WA,249826,1.2,2.8
+52,Outer Regional Australia,WA,199241,1.5,4.8
+53,Remote Australia,WA,98163,1.8,5.8
+54,Very Remote Australia,WA,68352,2,6.8
+61,Inner Regional Australia,Tas.,356023,6.5,0.8
+62,Outer Regional Australia,Tas.,208996,6.2,0.4
+63,Remote Australia,Tas.,8671,5.8,0.2
+64,Very Remote Australia,Tas.,2571,5.4,0.1
+71,Major Cities of Australia,NT,155685,3.5,8.8
+72,Inner Regional Australia,NT,55885,3.5,8.2
+73,Outer Regional Australia,NT,49607,3.5,7.5
+74,Very Remote Australia,NT,264556,3.5,6.8
+80,Major Cities of Australia,ACT,483939,7,2.6
+81,Inner Regional Australia,ACT,691,7.2,2.4
