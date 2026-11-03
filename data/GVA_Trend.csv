@@ -1,16 +1,121 @@
-Region,State,2016-17,2017-18,2018-19,2019-20,2020-21,2021-22,2022-23,2023-24
-Alice Springs,NT,272,224,221,181,120,124,193,263
-Hobart and the South,TAS,1141,1171,1377,1141,773,998,1434,1706
-Australia's South West,WA,2015,1578,2001,1686,1698,1921,2567,2711
-Barossa,SA,118,107,128,107,129,125,151,164
-Adelaide,SA,3048,3246,3557,2992,1906,2131,4157,4447
-Outback Queensland,QLD,351,399,437,321,279,321,498,433
-Whitsundays,QLD,507,540,558,478,490,635,786,960
-Gold Coast,QLD,3655,3883,4401,3279,2381,2898,5367,5510
-Central Highlands,VIC,93,105,91,92,80,117,144,197
-Great Ocean Road,VIC,862,915,999,865,658,841,1247,1318
-Melbourne,VIC,13121,14026,15805,12636,4303,7149,15633,18227
-Hunter,NSW,1860,2082,2187,1745,1733,1471,2806,3070
-Blue Mountains,NSW,438,479,512,381,404,322,590,682
-Sydney,NSW,15125,16937,18522,14420,6850,8265,18966,22473
-Canberra,ACT,1468,1736,1730,1276,832,997,2078,2200
+Region,State,Financial_Year,GVA
+Alice Springs,NT,2016-17,272
+Alice Springs,NT,2017-18,224
+Alice Springs,NT,2018-19,221
+Alice Springs,NT,2019-20,181
+Alice Springs,NT,2020-21,120
+Alice Springs,NT,2021-22,124
+Alice Springs,NT,2022-23,193
+Alice Springs,NT,2023-24,263
+Hobart and the South,TAS,2016-17,1141
+Hobart and the South,TAS,2017-18,1171
+Hobart and the South,TAS,2018-19,1377
+Hobart and the South,TAS,2019-20,1141
+Hobart and the South,TAS,2020-21,773
+Hobart and the South,TAS,2021-22,998
+Hobart and the South,TAS,2022-23,1434
+Hobart and the South,TAS,2023-24,1706
+Australia's South West,WA,2016-17,2015
+Australia's South West,WA,2017-18,1578
+Australia's South West,WA,2018-19,2001
+Australia's South West,WA,2019-20,1686
+Australia's South West,WA,2020-21,1698
+Australia's South West,WA,2021-22,1921
+Australia's South West,WA,2022-23,2567
+Australia's South West,WA,2023-24,2711
+Barossa,SA,2016-17,118
+Barossa,SA,2017-18,107
+Barossa,SA,2018-19,128
+Barossa,SA,2019-20,107
+Barossa,SA,2020-21,129
+Barossa,SA,2021-22,125
+Barossa,SA,2022-23,151
+Barossa,SA,2023-24,164
+Adelaide,SA,2016-17,3048
+Adelaide,SA,2017-18,3246
+Adelaide,SA,2018-19,3557
+Adelaide,SA,2019-20,2992
+Adelaide,SA,2020-21,1906
+Adelaide,SA,2021-22,2131
+Adelaide,SA,2022-23,4157
+Adelaide,SA,2023-24,4447
+Outback Queensland,QLD,2016-17,351
+Outback Queensland,QLD,2017-18,399
+Outback Queensland,QLD,2018-19,437
+Outback Queensland,QLD,2019-20,321
+Outback Queensland,QLD,2020-21,279
+Outback Queensland,QLD,2021-22,321
+Outback Queensland,QLD,2022-23,498
+Outback Queensland,QLD,2023-24,433
+Whitsundays,QLD,2016-17,507
+Whitsundays,QLD,2017-18,540
+Whitsundays,QLD,2018-19,558
+Whitsundays,QLD,2019-20,478
+Whitsundays,QLD,2020-21,490
+Whitsundays,QLD,2021-22,635
+Whitsundays,QLD,2022-23,786
+Whitsundays,QLD,2023-24,960
+Gold Coast,QLD,2016-17,3655
+Gold Coast,QLD,2017-18,3883
+Gold Coast,QLD,2018-19,4401
+Gold Coast,QLD,2019-20,3279
+Gold Coast,QLD,2020-21,2381
+Gold Coast,QLD,2021-22,2898
+Gold Coast,QLD,2022-23,5367
+Gold Coast,QLD,2023-24,5510
+Central Highlands,VIC,2016-17,93
+Central Highlands,VIC,2017-18,105
+Central Highlands,VIC,2018-19,91
+Central Highlands,VIC,2019-20,92
+Central Highlands,VIC,2020-21,80
+Central Highlands,VIC,2021-22,117
+Central Highlands,VIC,2022-23,144
+Central Highlands,VIC,2023-24,197
+Great Ocean Road,VIC,2016-17,862
+Great Ocean Road,VIC,2017-18,915
+Great Ocean Road,VIC,2018-19,999
+Great Ocean Road,VIC,2019-20,865
+Great Ocean Road,VIC,2020-21,658
+Great Ocean Road,VIC,2021-22,841
+Great Ocean Road,VIC,2022-23,1247
+Great Ocean Road,VIC,2023-24,1318
+Melbourne,VIC,2016-17,13121
+Melbourne,VIC,2017-18,14026
+Melbourne,VIC,2018-19,15805
+Melbourne,VIC,2019-20,12636
+Melbourne,VIC,2020-21,4303
+Melbourne,VIC,2021-22,7149
+Melbourne,VIC,2022-23,15633
+Melbourne,VIC,2023-24,18227
+Hunter,NSW,2016-17,1860
+Hunter,NSW,2017-18,2082
+Hunter,NSW,2018-19,2187
+Hunter,NSW,2019-20,1745
+Hunter,NSW,2020-21,1733
+Hunter,NSW,2021-22,1471
+Hunter,NSW,2022-23,2806
+Hunter,NSW,2023-24,3070
+Blue Mountains,NSW,2016-17,438
+Blue Mountains,NSW,2017-18,479
+Blue Mountains,NSW,2018-19,512
+Blue Mountains,NSW,2019-20,381
+Blue Mountains,NSW,2020-21,404
+Blue Mountains,NSW,2021-22,322
+Blue Mountains,NSW,2022-23,590
+Blue Mountains,NSW,2023-24,682
+Sydney,NSW,2016-17,15125
+Sydney,NSW,2017-18,16937
+Sydney,NSW,2018-19,18522
+Sydney,NSW,2019-20,14420
+Sydney,NSW,2020-21,6850
+Sydney,NSW,2021-22,8265
+Sydney,NSW,2022-23,18966
+Sydney,NSW,2023-24,22473
+Canberra,ACT,2016-17,1468
+Canberra,ACT,2017-18,1736
+Canberra,ACT,2018-19,1730
+Canberra,ACT,2019-20,1276
+Canberra,ACT,2020-21,832
+Canberra,ACT,2021-22,997
+Canberra,ACT,2022-23,2078
+Canberra,ACT,2023-24,2200

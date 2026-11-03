@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "How Tourism's Economic Contribution Changed Over Time",
+    "subtitle": "Indexed total tourism GVA across 15 Australian regions (2016–17 = 100)"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/TracyTen/3179/refs/heads/main/data/GVA_Trend.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "fold": [
+        "2016-17",
+        "2017-18",
+        "2018-19",
+        "2019-20",
+        "2020-21",
+        "2021-22",
+        "2022-23",
+        "2023-24"
+      ],
+      "as": ["financial_year", "gva"]
+    },
+    {
+      "window": [
+        {
+          "op": "first_value",
+          "field": "gva",
+          "as": "baseline"
+        }
+      ],
+      "groupby": ["Region"],
+      "sort": [
+        {
+          "field": "financial_year",
+          "order": "ascending"
+        }
+      ]
+    },
+    {
+      "calculate": "datum.gva / datum.baseline * 100",
+      "as": "gva_index"
+    }
+  ],
+  "width": 700,
+  "height": 420,
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [6, 4],
+        "color": "gray"
+      },
+      "encoding": {
+        "y": {
+          "datum": 100
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "point": {
+          "filled": true,
+          "size": 45
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "financial_year",
+          "type": "ordinal",
+          "sort": [
+            "2016-17",
+            "2017-18",
+            "2018-19",
+            "2019-20",
+            "2020-21",
+            "2021-22",
+            "2022-23",
+            "2023-24"
+          ],
+          "title": "Financial Year",
+          "axis": {
+            "labelAngle": 0
+          }
+        },
+        "y": {
+          "field": "gva_index",
+          "type": "quantitative",
+          "title": "GVA Index (2016–17 = 100)",
+          "scale": {
+            "zero": false
+          }
+        },
+        "color": {
+          "field": "Region",
+          "type": "nominal",
+          "scale": {
+            "scheme": "tableau20"
+          },
+          "legend": {
+            "title": "Tourism Region",
+            "columns": 3
+          }
+        },
+        "detail": {
+          "field": "Region"
+        },
+        "tooltip": [
+          {
+            "field": "Region",
+            "type": "nominal",
+            "title": "Region"
+          },
+          {
+            "field": "State",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "financial_year",
+            "type": "ordinal",
+            "title": "Financial Year"
+          },
+          {
+            "field": "gva",
+            "type": "quantitative",
+            "title": "GVA ($m)",
+            "format": ",.0f"
+          },
+          {
+            "field": "gva_index",
+            "type": "quantitative",
+            "title": "GVA Index",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ]
+}
