@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Regional Tourism Expenditure & Employment Clusters (2023–24)",
+  "width": 750,
+  "height": 450,
+  "config": {
+    "title": {
+      "fontSize": 16
+    }
+  },
+  "projection": {
+    "type": "equirectangular",
+    "center": [134, -28],
+    "scale": 750
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/tonywr71/GeoJson-Data/master/australian-states.json",
+        "format": {
+          "type": "json"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f2f4f8",
+        "stroke": "#ffffff",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/TracyTen/3179/refs/heads/main/data/regions_coordinates.csv"
+      },
+      "mark": {
+        "type": "circle",
+        "opacity": 0.75,
+        "stroke": "#333333",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "Consumption",
+          "type": "quantitative",
+          "title": "Consumption ($M AUD)",
+          "scale": {
+            "type": "sqrt",
+            "range": [30,1800]
+          }
+        },
+        "color": {
+          "field": "Filled_Jobs",
+          "type": "quantitative",
+          "title": "Filled Jobs ('000)",
+          "scale": {
+            "scheme": "reds",
+            "type": "sqrt"
+          }
+        },
+        "tooltip": [
+          {"field": "Region", "type": "nominal", "title": "Tourism Region"},
+          {"field": "State", "type": "nominal", "title": "State"},
+          {"field": "Consumption", "type": "quantitative", "title": "Direct Consumption ($M)", "format": "$,.0f"},
+          {"field": "Filled_Jobs", "type": "quantitative", "title": "Filled Jobs ('000)", "format": ".1f"},
+          {"field": "GVA", "type": "quantitative", "title": "Direct GVA ($M)", "format": "$,.0f"}
+        ]
+      }
+    }
+  ]
+}
