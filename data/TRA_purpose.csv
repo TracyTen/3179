@@ -1,37 +1,37 @@
-Purpose,Financial_Period,Measure,Value
-Holiday,Dec-2025,Domestic_Trips,190242
-Holiday,Mar-2026,Domestic_Trips,196817
-Holiday,Jun-2026,Domestic_Trips,200816
-Visiting Friends and Relatives,Dec-2025,Domestic_Trips,127776
-Visiting Friends and Relatives,Mar-2026,Domestic_Trips,129667
-Visiting Friends and Relatives,Jun-2026,Domestic_Trips,131416
-Business,Dec-2025,Domestic_Trips,33518
-Business,Mar-2026,Domestic_Trips,31152
-Business,Jun-2026,Domestic_Trips,29575
-Other,Dec-2025,Domestic_Trips,40367
-Other,Mar-2026,Domestic_Trips,40476
-Other,Jun-2026,Domestic_Trips,41059
-Holiday,Dec-2025,Visitor_Nights,173286
-Holiday,Mar-2026,Visitor_Nights,178637
-Holiday,Jun-2026,Visitor_Nights,181831
-Visiting Friends and Relatives,Dec-2025,Visitor_Nights,139679
-Visiting Friends and Relatives,Mar-2026,Visitor_Nights,140386
-Visiting Friends and Relatives,Jun-2026,Visitor_Nights,139712
-Business,Dec-2025,Visitor_Nights,39121
-Business,Mar-2026,Visitor_Nights,32381
-Business,Jun-2026,Visitor_Nights,28477
-Other,Dec-2025,Visitor_Nights,26331
-Other,Mar-2026,Visitor_Nights,28537
-Other,Jun-2026,Visitor_Nights,28979
-Holiday,Dec-2025,Regional_Expenditure,84991
-Holiday,Mar-2026,Regional_Expenditure,88705
-Holiday,Jun-2026,Regional_Expenditure,91191
-Visiting Friends and Relatives,Dec-2025,Regional_Expenditure,39887
-Visiting Friends and Relatives,Mar-2026,Regional_Expenditure,41245
-Visiting Friends and Relatives,Jun-2026,Regional_Expenditure,42244
-Business,Dec-2025,Regional_Expenditure,17936
-Business,Mar-2026,Regional_Expenditure,16453
-Business,Jun-2026,Regional_Expenditure,15632
-Other,Dec-2025,Regional_Expenditure,10346
-Other,Mar-2026,Regional_Expenditure,10642
-Other,Jun-2026,Regional_Expenditure,11103
+PurpoPurpose,Financial_Period,Measure,Value,Share
+Holiday,Dec-2025,Domestic_Trips,190242,48.5
+Holiday,Mar-2026,Domestic_Trips,196817,49.4
+Holiday,Jun-2026,Domestic_Trips,200816,49.8
+Visiting Friends and Relatives,Dec-2025,Domestic_Trips,127776,32.6
+Visiting Friends and Relatives,Mar-2026,Domestic_Trips,129667,32.6
+Visiting Friends and Relatives,Jun-2026,Domestic_Trips,131416,32.6
+Business,Dec-2025,Domestic_Trips,33518,8.6
+Business,Mar-2026,Domestic_Trips,31152,7.8
+Business,Jun-2026,Domestic_Trips,29575,7.3
+Other,Dec-2025,Domestic_Trips,40367,10.3
+Other,Mar-2026,Domestic_Trips,40476,10.2
+Other,Jun-2026,Domestic_Trips,41059,10.2
+Holiday,Dec-2025,Visitor_Nights,173286,45.8
+Holiday,Mar-2026,Visitor_Nights,178637,47.0
+Holiday,Jun-2026,Visitor_Nights,181831,48.0
+Visiting Friends and Relatives,Dec-2025,Visitor_Nights,139679,36.9
+Visiting Friends and Relatives,Mar-2026,Visitor_Nights,140386,36.9
+Visiting Friends and Relatives,Jun-2026,Visitor_Nights,139712,36.9
+Business,Dec-2025,Visitor_Nights,39121,10.3
+Business,Mar-2026,Visitor_Nights,32381,8.5
+Business,Jun-2026,Visitor_Nights,28477,7.5
+Other,Dec-2025,Visitor_Nights,26331,7.0
+Other,Mar-2026,Visitor_Nights,28537,7.5
+Other,Jun-2026,Visitor_Nights,28979,7.6
+Holiday,Dec-2025,Regional_Expenditure,84991,55.5
+Holiday,Mar-2026,Regional_Expenditure,88705,56.5
+Holiday,Jun-2026,Regional_Expenditure,91191,56.9
+Visiting Friends and Relatives,Dec-2025,Regional_Expenditure,39887,26.0
+Visiting Friends and Relatives,Mar-2026,Regional_Expenditure,41245,26.3
+Visiting Friends and Relatives,Jun-2026,Regional_Expenditure,42244,26.4
+Business,Dec-2025,Regional_Expenditure,17936,11.7
+Business,Mar-2026,Regional_Expenditure,16453,10.5
+Business,Jun-2026,Regional_Expenditure,15632,9.8
+Other,Dec-2025,Regional_Expenditure,10346,6.8
+Other,Mar-2026,Regional_Expenditure,10642,6.8
+Other,Jun-2026,Regional_Expenditure,11103,6.9
