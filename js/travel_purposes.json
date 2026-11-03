@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Quarterly Dynamics of Travel Motivators: Expenditure ($M)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/TracyTen/3179/refs/heads/main/data/travel_purposes.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "Expenditure_M": "number",
+        "Visitor_Nights_000": "number",
+        "Trips_000": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.Travel_Purpose != 'Total' && datum.Travel_Purpose != 'Other'"
+    }
+  ],
+  "facet": {
+  "field": "Travel_Purpose",
+  "type": "nominal",
+  "columns": 3,
+  "title": null
+  },
+  "spec": {
+    "width": 220,
+    "height": 200,
+    "layer": [
+      {
+        "mark": {
+          "type": "area",
+          "opacity": 0.15
+        },
+        "encoding": {
+          "x": {
+            "field": "Quarter",
+            "type": "ordinal",
+            "sort": ["Q2 2025", "Q3 2025", "Q4 2025", "Q1 2026", "Q2 2026"],
+            "axis": {"labelAngle": -45}
+          },
+          "y": {
+            "field": "Expenditure_M",
+            "type": "quantitative",
+            "scale": {"zero": false}
+          },
+          "color": {
+            "field": "Travel_Purpose",
+            "type": "nominal",
+            "scale": {
+              "domain": ["Holiday", "Visiting friends and relatives", "Business"],
+              "range": ["#2b5c8f", "#d95f02", "#7570b3"]
+            },
+            "legend": null
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2.5,
+          "point": {
+            "filled": true,
+            "size": 60
+          }
+        },
+        "encoding": {
+          "x": {
+            "field": "Quarter",
+            "type": "ordinal",
+            "sort": ["Q2 2025", "Q3 2025", "Q4 2025", "Q1 2026", "Q2 2026"]
+          },
+          "y": {
+            "field": "Expenditure_M",
+            "type": "quantitative",
+            "title": "Regional Expenditure ($M AUD)",
+            "scale": {"zero": false}
+          },
+          "color": {
+            "field": "Travel_Purpose",
+            "type": "nominal",
+            "scale": {
+              "domain": ["Holiday", "Visiting friends and relatives", "Business"],
+              "range": ["#2b5c8f", "#d95f02", "#7570b3"]
+            },
+            "legend": null
+          },
+          "tooltip": [
+            {"field": "Travel_Purpose", "type": "nominal", "title": "Purpose"},
+            {"field": "Quarter", "type": "ordinal", "title": "Quarter"},
+            {"field": "Expenditure_M", "type": "quantitative", "title": "Expenditure ($M)", "format": "$,.0f"},
+            {"field": "Visitor_Nights_000", "type": "quantitative", "title": "Visitor Nights ('000)", "format": ",.0f"},
+            {"field": "Trips_000", "type": "quantitative", "title": "Trips ('000)", "format": ",.0f"}
+          ]
+        }
+      }
+    ]
+  },
+  "config": {
+    "axis": {"grid": true}
+  }
+}
