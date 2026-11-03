@@ -1,0 +1,35 @@
+RA_Code,Remoteness_Area,State,Population_2025
+10,Major Cities of Australia,NSW,6535769
+11,Inner Regional Australia,NSW,1637245
+12,Outer Regional Australia,NSW,267232
+13,Remote Australia,NSW,26493
+14,Very Remote Australia,NSW,6745
+20,Major Cities of Australia,Vic.,6543436
+21,Inner Regional Australia,Vic.,1269403
+22,Outer Regional Australia,Vic.,257833
+23,Remote Australia,Vic.,3237
+30,Major Cities of Australia,Qld,3719519
+31,Inner Regional Australia,Qld,1085429
+32,Outer Regional Australia,Qld,736287
+33,Remote Australia,Qld,73113
+34,Very Remote Australia,Qld,54743
+40,Major Cities of Australia,SA,1442902
+41,Inner Regional Australia,SA,190485
+42,Outer Regional Australia,SA,209082
+43,Remote Australia,SA,45714
+44,Very Remote Australia,SA,14482
+50,Major Cities of Australia,WA,2417502
+51,Inner Regional Australia,WA,249826
+52,Outer Regional Australia,WA,199241
+53,Remote Australia,WA,98163
+54,Very Remote Australia,WA,68352
+61,Inner Regional Australia,Tas.,356023
+62,Outer Regional Australia,Tas.,208996
+63,Remote Australia,Tas.,8671
+64,Very Remote Australia,Tas.,2571
+71,Major Cities of Australia,NT,155685
+72,Inner Regional Australia,NT,55885
+73,Outer Regional Australia,NT,49607
+74,Very Remote Australia,NT,264556
+80,Major Cities of Australia,ACT,483939
+81,Inner Regional Australia,ACT,691
