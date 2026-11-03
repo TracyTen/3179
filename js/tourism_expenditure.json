@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Domestic Tourism Expenditure Composition (YE June 2026 Total: $160.2B)",
+  "width": 650,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/TracyTen/3179/refs/heads/main/data/annual_totals.csv"
+  },
+  "mark": {"type": "bar", "cornerRadiusEnd": 4},
+  "encoding": {
+    "x": {
+      "field": "YE_June_2026_M",
+      "type": "quantitative",
+      "title": "Total Annual Expenditure ($M)"
+    },
+    "y": {
+      "field": "Expenditure_Item",
+      "type": "nominal",
+      "title": "Expenditure Item",
+      "sort": "-x"
+    },
+    "color": {
+      "field": "YE_June_2026_M",
+      "type": "quantitative",
+      "scale": {"scheme": "blues"},
+      "legend": null
+    },
+    "tooltip": [
+      {"field": "Expenditure_Item", "type": "nominal", "title": "Category"},
+      {"field": "YE_June_2026_M", "type": "quantitative", "title": "Expenditure ($M)", "format": "$,.0f"}
+    ]
+  }
+}
