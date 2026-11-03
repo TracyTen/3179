@@ -1,9 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Australian Regional Tourism</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Australian Tourism & Demographic Analytics</title>
 
-    
-  </head>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <header class="dashboard-header bg-white border-b border-gray-200 py-10 px-6 sm:px-12">
+    <div class="max-w-6xl mx-auto space-y-2">
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">Australian Domestic Tourism & Demographic Analytics (2025–2026)</h1>
+      <p class="text-base text-gray-600 max-w-3xl leading-relaxed">A multi-perspective exploratory dashboard combining ABS population data and TRA tourism metrics.</p>
+    </div>
+  </header>
+
+  <main class="dashboard-container max-w-6xl mx-auto px-6 sm:px-12 py-12">
+
+    <section class="story-section">
+      <div class="section-header">
+        <h2>Part 1: Regional Economic Footprint</h2>
+        <p>Examining spatial clusters of tourism revenue and regional growth trends over time.</p>
+      </div>
+
+      <div class="map-card">
+        <h3>Spatial Distribution of Tourism Expenditure & Employment</h3>
+        <div id="vis-map-1" class="chart-box"></div>
+      </div>
+
+      <div class="charts-grid-2col">
+        <div class="chart-card">
+          <h3>Regional Economic Contribution (Indexed)</h3>
+          <div id="vis-heatmap" class="chart-box"></div>
+        </div>
+        <div class="chart-card">
+          <h3>State Volume vs. Expenditure Growth Profile</h3>
+          <div id="vis-dumbbell" class="chart-box"></div>
+        </div>
+      </div>
+
+      <div class="insight-box">
+        <p><strong>Key Insight:</strong> Capital city hubs and major coastal regions drive over 70% of total direct consumption, but regional hubs like Outback QLD demonstrate significant yield per visitor growth.</p>
+      </div>
+    </section>
+
+    <section class="story-section">
+      <div class="section-header">
+        <h2>Part 2: Demographics & Travel Dynamics</h2>
+        <p>Analyzing population remoteness alongside travel motivations and stay durations.</p>
+      </div>
+
+      <div class="map-card">
+        <h3>Demographic Weight & Population Remoteness Distribution</h3>
+        <div id="vis-map-2" class="chart-box"></div>
+      </div>
+
+      <div class="charts-grid-3col">
+        <div class="chart-card">
+          <h3>Intrastate vs. Interstate Share</h3>
+          <div id="vis-stacked-bar" class="chart-box"></div>
+        </div>
+        <div class="chart-card">
+          <h3>Travel Purpose Disparities</h3>
+          <div id="vis-parallel-coord" class="chart-box"></div>
+        </div>
+        <div class="chart-card">
+          <h3>Quarterly Travel Motivators</h3>
+          <div id="vis-area-chart" class="chart-box"></div>
+        </div>
+      </div>
+
+      <div class="insight-box">
+        <p><strong>Key Insight:</strong> Intrastate travel dominates total regional spend, heavily influenced by holiday intent and high local population concentrations in inner regional tiers.</p>
 
   

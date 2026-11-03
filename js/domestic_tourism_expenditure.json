@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Domestic Tourism Expenditure (YE June 2026)",
+  "width": 340,
+  "height": 340,
+  "data": {
+    "url": "https://raw.githubusercontent.com/TracyTen/3179/refs/heads/main/data/annual_totals.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "toNumber(datum.YE_June_2026_M)",
+      "as": "Expenditure_M"
+    }
+  ],
+  "mark": {
+    "type": "arc",
+    "innerRadius": 80,
+    "outerRadius": 140,
+    "cornerRadius": 4,
+    "padAngle": 0.02
+  },
+  "encoding": {
+    "theta": {
+      "field": "Expenditure_M",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "Expenditure_Item",
+      "type": "nominal",
+      "title": "Expenditure Item"
+    },
+    "tooltip": [
+      {"field": "Expenditure_Item", "type": "nominal", "title": "Item"},
+      {"field": "Expenditure_M", "type": "quantitative", "title": "Expenditure ($M)", "format": "$,.0f"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": null}
+  }
+}

@@ -1,9 +1,0 @@
-{
-"$schema":"https://vega.github.io/schema/vega-lite/v5.json",
-"title":{"text":"CheapestEuropeanCities"},
-
-"data": {
-  "url": "../data/overnight-trips.csv",
-  "format": {"type": "csv"}
-}
-}
