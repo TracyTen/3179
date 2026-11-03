@@ -1,14 +1,77 @@
 Region,State,Consumption,GVA,GRP,Filled_Jobs
 South Coast,NSW,5340,1492,1769,17.5
-Sydney,NSW
-Snowy Mountains,NSW
-Capital Country,NSW
-The Murray,NSW
-Riverina,NSW
-Central NSW,NSW
-Hunter,NSW
-New England North West,NSW
-Outback NSW,NSW
-Central Coast,NSW
-Blue Mountains,NSW
-North Coast NSW,NSW
+Sydney,NSW,29136,11629,13701,85.2
+Snowy Mountains,NSW,1210,316,380,5.1
+Capital Country,NSW,1489,398,470,4.9
+The Murray,NSW,1040,295,357,4.2
+Riverina,NSW,1232,327,386,4.6
+Central NSW,NSW,2972,715,843,10.3
+Hunter,NSW,5364,1533,1811,18.3
+New England North West,NSW,1495,405,477,5.5
+Outback NSW,NSW,535,125,152,2.1
+Central Coast,NSW,1900,604,711,7.8
+Blue Mountains,NSW,1377,353,414,4.3
+North Coast NSW,NSW,7076,2001,2393,25.2
+Melbourne,VIC,24716,9589,11346,87.5
+Wimmera,VIC,137,24,28,0.7
+Mallee,VIC,766,212,254,3.8
+Great Ocean Road,VIC,2531,665,792,11.3
+Western Grampians,VIC,258,70,83,1.4
+Bendigo Loddon,VIC,1110,299,351,4.8
+Peninsula,VIC,2344,672,791,10.5
+Central Murray,VIC,759,181,215,4.0
+Goulburn,VIC,663,182,212,3.2
+High Country,VIC,2720,719,860,12.6
+Lakes,VIC,925,227,271,5.0
+Gippsland,VIC,1167,359,424,5.3
+Yarra Valley and the Dandenong Ranges,VIC,1225,403,469,6.9
+Geelong and the Bellarine,VIC,2148,618,724,9.4
+Macedon,VIC,333,89,103,1.5
+Spa Country,VIC,550,113,134,3.3
+Ballarat,VIC,1126,293,342,4.5
+Central Highlands,VIC,496,103,123,2.5
+Murray East,VIC,255,78,93,0.8
+Phillip Island,VIC,1183,307,365,4.9
+Limestone Coast,SA,587,144,168,2.1
+"Murray River, Lakes and Coorong",SA,336,83,98,1.4
+Fleurieu Peninsula,SA,883,210,249,3.6
+Adelaide,SA,6545,2553,3001,22.8
+Barossa,SA,379,75,87,1.0
+Riverland,SA,317,71,84,1.2
+Flinders Ranges and Outback,SA,779,183,216,2.5
+Clare Valley,SA,230,39,46,0.7
+Eyre Peninsula,SA,631,168,199,2.4
+Yorke Peninsula,SA,468,86,103,1.6
+Kangaroo Island,SA,277,83,98,1.0
+ Adelaide Hills ,SA,302,77,90,1.4
+Gold Coast,QLD,8836,3079,3680,29.9
+Brisbane,QLD,14758,5633,6738,45.9
+Sunshine Coast,QLD,6107,1375,1638,17.8
+Fraser Coast,QLD,1105,649,775,7.0
+Southern Queensland Country,QLD,2945,740,880,10.0
+Bundaberg,QLD,839,229,272,2.9
+Gladstone,QLD,411,154,183,1.7
+Mackay,QLD,1116,283,337,3.1
+Whitsundays,QLD,1763,568,680,5.9
+Townsville,QLD,1485,530,632,6.0
+Tropical North Queensland,QLD,5551,1890,2263,19.3
+Outback Queensland,QLD,1011,228,271,2.7
+Capricorn,QLD,1081,306,364,3.9
+Destination Perth,WA,9616,3688,4441,40.4
+Australia's Golden Outback,WA,1848,383,440,5.7
+Australia's South West,WA,5157,1328,1525,15.7
+Australia's North West,WA,2469,716,842,5.9
+Australia's Coral Coast,WA,1620,488,562,5.0
+Darwin,NT,1735,634,763,3.94
+Barkly,NT,66,20,25,0.10
+Alice Springs,NT,439,163,196,1.08
+Litchfield Kakadu Arnhem,NT,427,108,135,1.34
+Katherine Daly,NT,384,106,131,0.97
+MacDonnell,NT,91,18,23,0.15
+Lasseter,NT,516,167,192,0.39
+Canberra,ACT,4028,1341,1572,11.7
+East Coast,TAS,421,127,156,2.2
+North West,TAS,851,313,384,4.1
+West Coast,TAS,153,46,56,0.3
+Hobart and the South,TAS,3127,1045,1232,11.1
+Launceston and the North,TAS,1208,363,440,5.1
